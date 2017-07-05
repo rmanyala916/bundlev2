@@ -6,7 +6,7 @@ networks:
 
 services:
  jenkins:
-  build: ./jenkins
+  image: devopsevd/jenkins:2.60.1
   ports:
     - "18080:8080"
   networks:
@@ -19,7 +19,7 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock
 
  sonar:
-  build: ./sonar
+  image: devopsevd/sonar:5.6.3
   ports:
    - "19000:9000"
   networks:

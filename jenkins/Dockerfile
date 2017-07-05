@@ -25,7 +25,7 @@ RUN /usr/local/bin/plugins.sh /var/jenkins_home/plugins.txt
 
 # Adding default Jenkins Jobs
 # COPY jobs/demo-git-job.xml /usr/share/jenkins/ref/jobs/demo-git-job/config.xml
-COPY jobs/demo-pipeline-job.xml /usr/share/jenkins/ref/jobs/demo-pipeline-job/config.xml
+# COPY jobs/demo-pipeline-job.xml /usr/share/jenkins/ref/jobs/demo-pipeline-job/config.xml
 
 ############################################
 # Configure Jenkins
